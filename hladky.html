@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Гладкий</title>
+	<style>
+		.st, .nd, .rd, .foth, .fith, .sith, .seth, .eth{
+			background-color: #29C7D7;
+			width: 250px;
+			height: 150px;
+			margin: 0 auto;
+		}
+		.prost{
+			background-color: white;
+			height: 100px;
+		}
+		.box{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		.st:hover {
+			transform: scale(1);
+			transition: 1s;
+		}
+		.nd:hover {
+			transform: scale(2);
+			transition: 1s;
+		}
+		.rd:hover {
+			transform: scaleX(-1);
+			transition: 1s;
+		}
+		.foth:hover {
+			transform: scaleY(-1);
+			transition: 1s;
+		}
+		.fith:hover {
+			transform: scale(1.5,0.5);
+			transition: 1s;
+		}
+		.sith:hover {
+			transform: scale(0.5,1.5);
+			transition: 1s;
+		}
+		.seth:hover {
+			transform: scaleX(2);
+			transition: 1s;
+		}
+		.eth:hover {
+			transform: scaleY(2);
+			transition: 1s;
+		}
+		h3 {
+			text-align: center;
+			padding-top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="st"><h3>transform: scale(1)</h3></div>
+		<div class="nd"><h3>transform: scale(2)</h3></div>
+		<div class="rd"><h3>transform: scaleX(-1)</h3></div>
+	</div>
+	<div class="prost"></div>
+	<div class="box">
+		<div class="foth"><h3>transform: scaleY(-1)</h3></div>
+		<div class="fith"><h3>transform: scale(1.5,0.5)</h3></div>
+		<div class="sith"><h3>transform: scale(0.5,1.5)</h3></div>
+	</div>
+	<div class="prost"></div>
+	<div class="box">
+		<div class="seth"><h3>transform: scaleX(2)</h3></div>
+		<div class="eth"><h3>transform: scaleY(2)</h3></div>
+	</div>
+</body>
+</html>

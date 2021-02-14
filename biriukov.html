@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+		.shine-div {	
+		  height: 40vh;
+		  width: 25vw;
+		  margin-right: auto;
+		  margin-left: auto;
+		  border-radius: 10px;
+		  background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #C6FFB3 4%, #4EFF33 12.25%, #268000 31.25%, #12B300 50%) top right/200% 200%;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  color: white;
+		  font-weight: bold;
+		  animation: colorChange 5s infinite alternate;
+		  position: relative;
+		}
+
+		@keyframes colorChange {
+		  to {
+		    background-position:top left;
+		  }
+		}
+		.shine-div2 {
+		  height: 40vh;
+		  width: 25vw;
+		  margin-right: auto;
+		  margin-left: auto;
+		  border-radius: 10px;
+		  background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3ff 4%, #ff33ff 12.25%, #800080 31.25%, #b300b3 50%) top right/400% 200%;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  color: white;
+		  font-weight: bold;
+		  animation: colorChange 5s infinite alternate linear;
+		  position: relative;
+		  top: 200px;
+		}
+
+		@keyframes colorChange {
+		  from {
+		    background-position:top 0 left 33%;
+		    background-size:400% 200%;
+		  
+		  }
+		  50% {
+		    background-position:top center;
+		    background-size:200% 200%;
+		  }
+		  to {
+		    background-position:top 0 right 33%;
+		    background-size:400% 200%;
+		  }
+		}
+		body{
+			background-color: #7AFFFF;
+		}
+		img{
+			border-radius: 50%;
+			float: left;
+		}
+		.container{
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-column-gap: 10px;
+			grid-auto-rows: 250px;
+		}
+		.first{
+			grid-column: 1/2;
+			grid-row: 1/2;
+			transition: 0.5s;
+		}
+		.second{
+			grid-column: 2/3;
+			grid-row: 1/2;
+			transition: 0.5s;
+		}
+		.third{
+			grid-column: 3/4;
+			grid-row: 1/2;
+			transition: 0.5s;
+		}
+		.fourth{
+			grid-column: 1/2;
+			grid-row: 2/3;
+			transition: 0.5s;
+
+		}
+		.fifth{
+			grid-column: 2/3;
+			grid-row: 2/3;
+			transition: 0.5s;
+		}
+		.sixth{
+			grid-column: 3/4;
+			grid-row: 2/3;
+			transition: 0.5s;
+		}
+		div{
+			margin: auto;
+		}
+		.first:hover{
+			transform: translateX(20px);
+		}
+		.second:hover{
+			transform: translateY(20px);
+		}
+		.third:hover{
+			transform: translate(40px);
+		}
+		.fourth:hover{
+			transform: scaleX(1.5);
+		}
+		.fifth:hover{
+			transform: scaleY(1.5);
+		}
+		.sixth:hover{
+			transform: scale(1.5);
+		}
+		h1{
+			font-family: 'Poppins', sans-serif;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Game "Play with Pudge"</h1>
+	<div class="container">
+		<div class="shine-div">
+			<div class="first">
+				<img src="https://s5o.ru/storage/simple/cyber/edt/56/61/01/50/cyberebeeae34e69.jpg" width="200">
+				<h3>translateX(20px)</h3>
+			</div>
+		</div>
+		<div class="shine-div">	
+			<div class="second">
+				<img src="https://s5o.ru/storage/simple/cyber/edt/56/61/01/50/cyberebeeae34e69.jpg" width="200">
+				<h3>translateY(20px)</h3>
+			</div>
+		</div>
+		<div class="shine-div">	
+			<div class="third">
+				<img src="https://s5o.ru/storage/simple/cyber/edt/56/61/01/50/cyberebeeae34e69.jpg" width="200">
+				<h3>translate(40px)</h3>
+			</div>
+		</div>
+		<div class="shine-div2">	
+			<div class="fourth">
+				<img src="https://s5o.ru/storage/simple/cyber/edt/56/61/01/50/cyberebeeae34e69.jpg" width="200">
+				<h3>scaleX(1.5)</h3>
+			</div>
+		</div>
+		<div class="shine-div2">	
+			<div class="fifth">
+				<img src="https://s5o.ru/storage/simple/cyber/edt/56/61/01/50/cyberebeeae34e69.jpg" width="200">
+				<h3>scaleY(1.5)</h3>
+			</div>
+		</div>
+		<div class="shine-div2">	
+			<div class="sixth">
+				<img src="https://s5o.ru/storage/simple/cyber/edt/56/61/01/50/cyberebeeae34e69.jpg" width="200">
+				<h3>scale(1.5)</h3>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
