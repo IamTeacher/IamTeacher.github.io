@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Artamonova</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			transition: 2s;
+			background-color: #2f368f;
+		
+			margin: 20px;
+			float: left;
+		}
+		.d1:hover{
+			transform: rotate(90deg);
+			filter: opacity(70%);
+		}
+		h4{
+			color: white;
+			text-align: center;
+			
+		}
+		.d2:hover{
+			transform: rotate(-90deg);
+			filter: opacity(70%);
+		}
+		.d3:hover{
+			transform: rotateX(50deg);
+			filter: opacity(70%);
+		}
+		.d4:hover{
+			transform: rotateY(50deg);
+			filter: opacity(70%);
+		}
+		.d5:hover{
+			transform: rotate(720deg);
+			filter: opacity(70%);
+		}
+		.d6:hover{
+			transform: rotate(3turn);
+			filter: opacity(70%);
+		}
+		body{
+			background-color: lightgrey;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;font-weight: bold;">Rotate Examples</h1>
+	<div class="d1"><h4>transform: rotate(90deg);</h4></div>
+	<div class="d2"><h4>transform: rotate(-90deg);</h4></div>
+	<div class="d3"><h4>transform: rotateX(50deg);</h4></div>
+	<div class="d4"><h4>transform: rotateY(50deg);</h4></div>
+	<div class="d5"><h4>transform: rotate(720deg);</h4></div>
+	<div class="d6"><h4>transform: rotate(3turn);</h4></div>
+</body>
+</html>

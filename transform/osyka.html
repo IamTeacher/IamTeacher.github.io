@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Osyka</title>
+  <style>
+  	* {
+  		transition: 1s;
+  	}
+  	kbd {
+  		font-size: 20px;
+  		color: white;
+  	}
+  	body{
+  		display: flex;
+  		flex-wrap: wrap;
+  		padding: 20px;
+  		justify-content: center;
+  		background-color: lightgray
+  	}
+  	.div {
+  		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		width: 290px;
+  		height: 190px;
+  		background-color: purple;
+  		margin: 20px;
+  		text-align: center;
+  		padding: 10px;
+  	}
+  	.one:hover {
+  		transform: translateX(20px);
+  	}
+	.two:hover {
+		transform: translateY(-20px)
+	}
+	.three:hover {
+		transform: translate(-20px, 20px)
+	}
+	.four:hover {
+		transform: scaleX(-1)
+	}
+	.five:hover {
+		transform: scaleY(1.2)
+	}
+	.six:hover {
+		transform: scale(1.2, 0.5)
+	}
+	.seven:hover {
+		transform: rotate(720deg)
+	}
+	.eight:hover {
+		transform: skewX(20deg)
+	}
+	.nine:hover {
+		transform: skewY(-20deg)
+	}
+	.ten:hover {
+		transform: skew(-20deg, 20deg)
+	}
+	.eleven:hover {
+		transform: matrix(1.2,0,0.5,1.2,50,0)
+	}
+  </style>
+ </head>
+ <body>
+	<div class="one"><div class="div"><kbd>translateX(20px)<br><br>Зрушує елемент на 20px вправо</kbd></div></div>
+	<div class="two"><div class="div"><kbd>translateY(-20px)<br><br>Зрушує елемент на 20px вверх</kbd></div></div>
+	<div class="three"><div class="div"><kbd>translate(-20px, 20px)<br><br>Зрушує елемент на 20px вліво і на 20px вниз</kbd></div></div>
+	<div class="four"><div class="div"><kbd>scaleX(-1)<br><br> Дзеркально відображає по горизонталі</kbd></div></div>
+	<div class="five"><div class="div"><kbd>scaleY(1.2)<br><br>Збільшує масштаб по вертикалі в 1,2 рази</kbd></div></div>
+	<div class="six"><div class="div"><kbd>scale(1.2, 0.5)<br><br> Збільшує масштаб в 1,2 рази по горизонталі і зменшує вдвічі по вертикалі</kbd></div></div>
+	<div class="seven"><div class="div"><kbd>rotate(720deg)<br><br>Повертає елемент на 780° за годинниковою стрілкою</kbd></div></div>
+	<div class="eight"><div class="div"><kbd>skewX(20deg)<br><br>Нахиляє елемент на 20° по горизонталі</kbd></div></div>
+	<div class="nine"><div class="div"><kbd>skewY(-20deg)<br><br>Нахиляє елемент на 20° по вертикалі</kbd></div></div>
+	<div class="ten"><div class="div"><kbd>skew(-20deg, 20deg)<br><br> Нахиляє елемент на 20px вправо</kbd></div></div>
+	<div class="eleven"><div class="div"><kbd>matrix(1.2,0,0.5,1.2,50,0)<br><br>Збільшує на 1.2 по горизонталі, деформує по осі Х вліво, збільшує по вертикалі в 1,2 рази, зміщує на 50рх вправо</kbd></div></div>
+ </body>
+</html>

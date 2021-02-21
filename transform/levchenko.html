@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Levchenko</title>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			color: rgb(102, 102, 255);
+		}
+		div{
+			height: 100px;
+			width: 200px;
+			float:left;
+			margin: 20px;
+			transition: 0.5s;
+		}
+		.a, .d, .g{
+			background: rgb(205, 255, 255);
+		}
+		.b, .e, .h{
+			background: rgb(255, 173, 255);
+		}
+		.c, .f{
+			background: rgb(205, 172, 255);
+		}
+		.a:hover {
+			transform: translateY(-30px);
+		}
+		.b:hover {
+			transform: translateY(30px);
+		}
+		.c:hover {
+			transform: translateX(30px);
+		}
+		.d:hover {
+			transform: translateX(-30px);
+		}
+		.e:hover {
+			transform: translate(-30px, -30px);
+		}
+		.f:hover {
+			transform: translate(-30px, 30px);
+		}
+		.g:hover {
+			transform: translate(30px, -30px);
+		}
+		.h:hover {
+			transform: translate(30px, 30px);
+		}
+	</style>
+</head>
+<body >
+<h1>Трансформація об'єктів веб-сторінок</h1>
+<div class="a"><p align="center">translateY(-30px)</p></div>
+<div class="b"><p align="center">translateY(30px)</p></div>
+<div class="c"><p align="center">translateX(0px)</p></div>
+<div class="d"><p align="center">translateX(-30px)</p></div>
+<div class="e"><p align="center">translate(-30px, -30px)</p></div>
+<div class="f"><p align="center">translate(-30px, 30px)</p></div>
+<div class="g"><p align="center">translate(30px, -30px)</p></div>
+<div class="h"><p align="center">translate(30px, 30px)</p></div>
+</body>
+</html>	

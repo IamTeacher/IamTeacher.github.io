@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Koitsan</title>
+	<style type="text/css">
+		div{
+			width: 220px;
+			height: 220px;
+			margin: 10px;	
+			border-radius: 50%;
+			 
+		}
+		h4{
+			margin-top: 95px;
+			margin-left: 35px;
+		}
+		.wrap{
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+		}
+			.wrap2{
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+			margin-top: 70px;
+		}
+
+		.block1{
+			background-color: lightpink;
+			transition: 1s;}
+		.block1:hover{
+			transform: scale(1.25);
+			
+		}
+		.block2{
+			background-color: lightpink;
+			transition: 1s;}
+		.block2:hover{
+			transform: scaleX(1.25);	
+		}
+		.block3{
+			background-color: lightpink;
+			transition: 1s;}
+		.block3:hover{
+			transform: scaleY(1.25);	
+		}
+		.block4{
+			background-color: lightpink;
+			transition: 1s;}
+		.block4:hover{
+			transform: scale(1.25,1.5);	
+		}
+		.block5{
+			background-color: lightpink;
+			transition: 1s;}
+		.block5:hover{
+			transform: scaleX(-1);	
+		}
+		.block6{
+			background-color: lightpink;
+			transition: 1s;}
+		.block6:hover{
+			transform: scaleY(-1);	
+		}		
+	</style>
+</head>
+<body bgcolor="gray">
+	<div class="wrap">
+	<div class="block1"><h4>transform:scale(1.25)</h4> </div>
+	<div class="block2"><h4>transform:scaleX(1.25)</h4> </div>
+	<div class="block3"><h4>transform:scaleY(1.25)</h4> </div>
+	</div>
+		<div class="wrap2">
+	<div class="block4"><h4>transform:scale(1.25,1.5)</h4> </div>
+	<div class="block5"><h4>transform:scaleX(-1)</h4> </div>
+	<div class="block6"><h4>transform:scaleY(-1)</h4> </div>
+	</div>
+</body>
+</html>

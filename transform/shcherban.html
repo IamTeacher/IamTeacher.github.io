@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scherban</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: cursive;
+        }
+        img{
+            width: 450px;
+            height: 300px;
+            border-radius: 10%;
+            border-style: solid;
+            margin: 10px;
+        }
+        .first{
+            display: flex;
+            justify-content: space-around;
+        }
+        .second{
+            display: flex;
+            justify-content: space-around;
+        }
+        h2{
+            display: flex;
+            flex-direction:row;
+        }
+        .tri{
+            width:450px;
+            height:300px;
+        }
+        .chet{
+            width:450px;
+            height:300px;
+        }
+        .one:hover{
+            transform:skew(20deg,-20deg);
+        }
+        .two:hover{
+            transform:skew(-20deg,20deg);
+        }
+        .three:hover{
+            transform:skew(20deg,20deg);
+        }
+        .four:hover{
+            transform: skew(-20deg,-20deg);
+        }
+        .five:hover{
+            transform: skewX(20deg);
+        }
+        .six:hover{
+            transform: skewX(-20deg);
+        }
+        .seven:hover{
+            transform: skewY(20deg);
+        }
+        .eight:hover{
+            transform: skewY(-20deg);
+        }
+    </style>
+</head>
+<body style="background-color: LightPink;">
+    <h1>Skew CSS3 Transform Examples (hover)</h1>
+    <div class="first">
+        <div class="1">
+        <h3 style="text-align: center;">Skew(20deg,-20deg)</h3>
+        <img class="one" src="https://www.flagistrany.ru/data/flags/big/ua.png"></div>
+        <div class="1">
+        <h3 style="text-align: center;">Skew(-20deg,20deg)</h3>
+        <img class="two" src="https://pngicon.ru/file/uploads/Flag-SShA.png"></div>
+        <div class="1">
+        <h3 style="text-align: center;">Skew(20deg,20deg)</h3>
+        <img class="three" src="http://pngimg.com/uploads/flags/flags_PNG14653.png"></div>
+    </div>
+    <div class="second">
+        <div class="2">
+        <h3 style="text-align: center;">Skew(-20deg,-20deg)</h3>
+        <img class="four" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png"></div>
+        <div class="2">
+        <h3 style="text-align: center;">SkewX(20deg)</h3>
+        <img class="five" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"></div>
+        <div class="2">
+        <h3 style="text-align: center;">SkewX(-20deg)</h3>
+        <img class="six" src="https://flagof.ru/wp-content/uploads/2018/10/%D0%9A%D0%9D%D0%A0_1.jpg"></div>
+    </div>
+    <div class="third">
+        <div class="tri">
+            <h3 style="text-align:center;">SkewY(20deg)</h3>
+            <img class="seven" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"></div>
+        <div style="position:relative;left:1020px;bottom:320px" class="tri">
+            <h3 style="text-align:center;">SkewY(-20deg)</h3>
+            <img class="eight" src="https://img.freepik.com/free-photo/red-and-white-polish-flag_146482-768.jpg?size=626&ext=jpg"></div>
+        </div>
+    </div>
+</body>
+</html>

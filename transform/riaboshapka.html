@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family:  margin: 0; text-align: center;
+			background: #FEC9A3FF;
+		}
+		h1 {
+			font-weight: normal; color: #332B28;
+		}
+		kbd {
+			font-size: 0.9em; display:inline-block; line-height:1.1;
+			transition: 0.29s;
+		}
+		.wrap{
+		  display: inline-block;
+		  margin: 0 40px 2em 0;
+		  background: #ebb582;
+          box-shadow: 3px 3px 10px 5px #CA9671FF;
+		}
+		div {
+		  width: 190px;
+		  height: 110px;
+		  line-height: 100px;
+		  margin: 0 auto;
+		  transition:  0.4s ;
+		  border-radius: 5%;
+
+		}
+		.one, .four, .seven, .ten {
+		  background: #d24136;
+		}
+		.two, .five, .eight, .eleven {
+		  background: #eb8a3e;
+		}
+		.three, .six, .nine {
+		  background: #785a35;
+		}
+
+		.one:hover {
+		  transform: translateX(30px);
+		}
+		.two:hover { 
+		  transform: translateX(-30px);
+		}
+		.three:hover {  
+		  transform: translateY(30px);
+		}
+		.four:hover { 
+		  transform: translateY(-30px);
+		}
+		.five:hover {  
+		  transform: translate(30px, 30px);
+		}
+		.six:hover {  
+		  transform: translate(30px, -30px);
+		}
+		.seven:hover {
+		  transform: translate(-30px, 30px);
+		}
+		.eight:hover { 
+		  transform: translate(-30px, -30px);
+		}
+        kbd:hover{
+        	color: #46211A;
+        	font-size: 13px;
+        	font-weight: bold;
+        }
+	</style>
+</head>
+<body>
+	<h1> Transform - translate</h1>
+<div class="wrap"><div class="one"><kbd> 1 translateX(30px)</kbd></div></div>
+<div class="wrap"><div class="two"><kbd>2 translateX(-30px)</kbd></div></div>
+<div class="wrap"><div class="three"><kbd>3 translateY(30px)</kbd></div></div>
+<div class="wrap"><div class="four"><kbd>4 translateY(-30px)</kbd></div></div>
+<div class="wrap"><div class="five"><kbd>5 translate(30px, 30px)</kbd></div></div>
+<div class="wrap"><div class="six"><kbd>6 translate(30px, -30px)</kbd></div></div>
+<div class="wrap"><div class="seven"><kbd>7 translate(-30px, 30px)</kbd></div></div>
+<div class="wrap"><div class="eight"><kbd>8 translate(-30px, -30px)</kbd></div></div>
+</body>
+</html>

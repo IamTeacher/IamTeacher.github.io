@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тепляков-Сучков</title>
+    <style>
+* {box-sizing: border-box;}
+body {font-family: 'Playfair Display', serif; margin: 0;text-align: center}
+h1 {font-weight: normal;color: #161414}
+kbd {font-size: 0.9em;display:block;line-height:1.1;}
+
+.one{
+    display: block;
+    background-color:brown;
+    margin:  40px ;
+}
+.three{
+    display: block;
+    background-color:yellow;
+    margin: 40px  ;
+    } 
+    
+    .two{
+    display: block;
+    background-color:blue;
+    margin:  40px  ;
+    }
+    .four{
+    display: block;
+    background-color:seagreen;
+    margin:  40px ;
+    }
+    .five{
+    display: block;
+    background-color:red;
+    margin:  40px ;
+    }
+    .six{
+    display: block;
+    background-color:lightgreen;
+    margin: 40px;
+    }
+    .seven{
+    display: block;
+    background-color:orange;
+    margin:  40px ;
+    }
+    .eight{
+    display:block;
+    background-color:blueviolet;
+    margin:  40px ;
+    }
+div {
+  width: 100px;
+  height: 50px;
+  line-height: 100px;
+  margin: 0 auto;
+  transition: all 1s ease-in-out;
+}
+  .one:hover {
+  transform: translateX(30px);
+  
+  }
+  .two:hover {
+  transform: translateY(-30px);
+ 
+  }
+  .three:hover {
+  transform: translate(-30px, 30px);
+  }
+  .four:hover {
+  transform: translateX(-30px);
+  } 
+  .five:hover {
+  transform: translateY(30px);
+  }
+  .six:hover {
+    transform: translate(30px, 30px);
+  }
+  .seven:hover {
+    transform: translate(30px, -30px);
+  }
+  .eight:hover {
+    transform: translate(-30px, -30px);
+  }
+    
+    </style>
+</head>
+<body>
+    <h1> Зсув трансформація</h1>
+<div class="wrap"><div class="one"><kbd>зсувX(30px)</kbd></div></div>
+<div class="wrap"><div class="two"><kbd>зсувY(-30px)</kbd></div></div>
+<div class="wrap"><div class="three"><kbd>зсув(-30px, 30px)</kbd></div></div>
+<div class="wrap"><div class="four"><kbd>зсувX(-30px)</kbd></div></div>
+<div class="wrap"><div class="five"><kbd>зсувY(30px)</kbd></div></div>
+<div class="wrap"><div class="six"><kbd>зсув(30px, 30px)</kbd></div></div>
+<div class="wrap"><div class="seven"><kbd>зсув(30px, -30px)</kbd></div></div>
+<div class="wrap"><div class="eight"><kbd>зсув(-30px, -30px)</kbd></div></div>
+</body>
+</html>

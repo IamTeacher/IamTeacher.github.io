@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transform</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	<style>
+		* {
+ 			margin: 0;
+ 			padding: 0;
+ 			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+			position: relative;
+			overflow: hidden;
+		}
+		.block{
+			margin: 100px auto 0;
+			background-color: #fcba03;
+			width: 300px;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: 0.5s;
+		}
+		.block__text{
+			color: #ffffff;
+			font-size: 36px;
+			font-family: 'Potta One', cursive;
+		}
+		.example{
+			font-family: 'PT Sans', sans-serif;
+			font-size: 24px;
+		}
+		.example__name{
+			color: #4a8a0a;
+		}
+		.example__arguments{
+			color: #db7909;
+		}
+		input{
+			margin: 0 10px;
+		}
+		.wrapper{
+			display: flex;
+		}
+		label{
+			font-family: 'PT Sans', sans-serif;
+			font-size: 22px;
+		}
+				/*BUTTON*/
+		.button{
+			display: block;
+			width: 150px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 20px;
+			position: relative;
+			transition: 1s;
+			border: 0px solid transparent;
+			background-color: transparent;
+			margin: 30px auto;
+		}
+		.button:hover{
+			background-color: #bf7a1f;
+			cursor: pointer;
+			border-radius: 10px 2px;
+			color: white;
+		}
+		.button:hover> .circle_1{
+			background-color: #ad7109;
+			transform: scale(4);
+			opacity: 0%;
+		}
+		.button:hover> .circle_2{
+			background-color: #ad7109;
+			transform: scale(4);
+			opacity: 0%;
+		}
+		.circle_1, .circle_2{
+			width: 20px;
+			height: 20px;
+			background-color: #bf7a1f;
+			border-radius: 50%;
+			position: absolute;
+			transition: 1s;
+		}
+		.circle_1{
+			animation: animate_one 4s ease-in-out infinite;
+		}
+		.circle_2{
+			animation: animate_second 4s ease-in-out infinite;
+		}
+		@keyframes animate_one {
+			0% {
+				left: 0;
+				bottom: 0;
+			}
+			25%{
+				left: 150px;
+				bottom: 0;
+			}
+			50%{
+				bottom: 30px;
+				left: 150px;
+			}
+			75%{
+				bottom: 30px;
+				left: 0;
+			}
+			100%{
+				bottom: 0;
+				left: 0;
+			}
+		}
+		@keyframes animate_second {
+			0% {
+				right: 0;
+				top: 0;
+			}
+			25%{
+				right: 150px;
+				top: 0;
+			}
+			50%{
+				top: 30px;
+				right: 150px;
+			}
+			75%{
+				top: 30px;
+				right: 0;
+			}
+			100%{
+				right: 0;
+				top: 0;
+			}
+		}
+		.main-wrapper{
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			position: absolute;
+			bottom: 100px;
+			width: 100%;
+		}
+		.emulator{
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+		<div class="block">
+			<p class="block__text">Matrix</p>
+		</div>
+	<div class="main-wrapper">
+	<form action="">
+		<p class="example">
+			Синтаксис функції:
+			<span class="example__name">matrix</span>(
+			<span class="example__arguments">a</span>, 
+			<span class="example__arguments">c</span>, 
+			<span class="example__arguments">b</span>, 
+			<span class="example__arguments">d</span>, 
+			<span class="example__arguments">x</span>, 
+			<span class="example__arguments">y</span>)
+		</p>
+		<div class="wrapper">
+			<input oninput="change();" type="range" min="-10" max="10" step="0.1" value="1" id="first_argument">
+			<label for="first_argument">Значення 
+				<span style="font-size: 26px;" class="example__arguments">a</span>
+				 змінює масштаб по горизонталі.</label>
+		</div>
+
+		<div class="wrapper">
+			<input oninput="change();" type="range" min="-10" max="10" step="0.1" value="0" id="second_argument">
+			<label for="second_argument">Значення 
+				<span style="font-size: 26px;" class="example__arguments">с</span> деформує сторони елемента по осі Y.</label>
+		</div>
+
+		<div class="wrapper">
+			<input oninput="change();" type="range" min="-10" max="10" step="0.1" value="0" id="third_argument">
+			<label for="third_argument">Значення 
+				<span style="font-size: 26px;" class="example__arguments">b</span> деформує сторони елемента по осі Х.</label>
+		</div>
+
+		<div class="wrapper">
+			<input oninput="change();" type="range" min="-10" max="10" step="0.1" value="1" id="fourth_argument">
+			<label for="fourth_argument">Значення 
+				<span style="font-size: 26px;" class="example__arguments">d</span> змінює масштаб по вертикалі.</label>
+		</div>
+
+		<div class="wrapper">
+			<input oninput="change();" type="range" min="-100" max="100" step="0.1" value="0" id="fifth_argument">
+			<label for="fifth_argument">Значення 
+				<span style="font-size: 26px;" class="example__arguments">x</span> зміщує елемент  по осі Х.</label>
+		</div>
+
+		<div class="wrapper">
+			<input oninput="change();" type="range" min="-100" max="100" step="0.1" value="0" id="sixth_argument">
+			<label for="sixth_argument">Значення 
+				<span style="font-size: 26px;" class="example__arguments">y</span> зміщує елемент  по осі Y.</label>
+		</div>
+		<button class="button">Оновити
+			<div class="circle_1"></div>
+			<div class="circle_2"></div>
+		</button>
+	</form>
+	<p class="emulator" class="example" >
+			Емулятор функції: <br>
+			<span id="" class="example__name">matrix</span>(
+			<span id="first" class="example__arguments">1</span>, 
+			<span id="second" class="example__arguments">0</span>, 
+			<span id="third" class="example__arguments">0</span>, 
+			<span id="fourth" class="example__arguments">1</span>, 
+			<span id="fifth" class="example__arguments">0</span>, 
+			<span id="sixth" class="example__arguments">0</span> )
+		</p>
+	</div>
+	<script>
+		var array = [first_argument, second_argument, third_argument, fourth_argument, fifth_argument, sixth_argument];
+		function change() {
+			element = document.getElementsByClassName("block")[0];
+			var val_1 = array[0].value;
+			var val_2 = array[1].value;
+			var val_3 = array[2].value;
+			var val_4 = array[3].value;
+			var val_5 = array[4].value;
+			var val_6 = array[5].value;
+			element.style.transform = "matrix("+val_1+","+val_2+","+val_3+","+val_4+","+val_5+","+val_6+")";
+			document.getElementById("first").innerHTML = val_1;
+			document.getElementById("second").innerHTML = val_2;
+			document.getElementById("third").innerHTML = val_3;
+			document.getElementById("fourth").innerHTML = val_4;
+			document.getElementById("fifth").innerHTML = val_5;
+			document.getElementById("sixth").innerHTML = val_6;
+		}
+	</script>
+</body>
+</html>

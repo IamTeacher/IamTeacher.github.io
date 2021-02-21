@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kormilchenko</title>
+	<style>
+        body{
+            background-color: chocolate;
+        }
+		.a, .b, .c, .d, .e, .f, .s, .w, .i{
+			background-color: blue;
+			color: white;
+			width: 200px;
+			height: 150px;
+			margin: 30px;
+			padding: 10px;
+            text-align: center;
+            border-radius: 10%;
+            box-shadow: rgb(3, 3, 117) 5px 2px 5px 2px;
+		}
+		.abc{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: auto;
+			background-color: none;
+			margin: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+		}
+		.a, .b, .c, .d, .e, .f, .s, .w, .i{
+			transition: 1s;
+		}
+		.a:hover{
+			transform: translateX(20px);
+            color: green;
+		}
+        .b:hover{
+			transform: translateX(-20px);
+            color: hotpink;
+		}
+        .c:hover{
+			transform: translateY(20px);
+            color: indianred;
+		}
+        .d:hover{
+			transform: translateY(-20px);
+            color: rgb(181, 91, 245);
+		}
+        .e:hover{
+			transform: translateY(20px) translateX(20px);
+            color: lightgreen;
+		}
+        .f:hover{
+			transform: translateY(-20px) translateX(-20px);
+            color: maroon;
+		}
+        .s:hover{
+			transform: translateY(-20px) translateX(20px);
+            color: olive;
+		}
+        .w:hover{
+			transform: translateY(20px) translateX(-20px);
+            color: salmon;
+		}
+        .i:hover{
+            color: red;
+        }
+        p{
+            padding: 30px;
+        }
+        h1:hover{
+            transform: scale(1.5);
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            color: rgb(73, 202, 129);
+            text-shadow: rgb(11, 39, 23) 5px 3px 5px ;
+            transition: 2s;
+        }
+	</style>
+</head>
+<body>
+    <h1>Transform translate</h1>
+	<div class="abc">
+	<div class="a"><p class="as">translateX(20px)</p></div>
+	<div class="b"><p class="lo">translateX(-20px)</p></div>
+    <div class="i"><p class="ko">translate(0px)</p></div>
+	<div class="c"><p class="ho">translateY(20px)</p></div>
+    <div class="d"><p class="jo">translateY(-20px)</p></div>
+	<div class="e"><p class="mo">translateX(20px) translateY(20px)</p></div>
+    <div class="f"><p class="bo">translateX(-20px) translateY(-20px)</p></div>
+    <div class="s"><p class="co">translateX(-20px) translateY(20px)</p></div>
+    <div class="w"><p class="vo">translateX(20px) translateY(-20px)</p></div>
+	</div>
+</body>
+</html>

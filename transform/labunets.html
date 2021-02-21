@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Labunets</title>
+	<style type="text/css">
+* {box-sizing: border-box;}
+body {font-family: 'Neucha', cursive; 
+      margin: 0;
+      text-align: center;
+      background-color: #F0E68C;}
+h1 {
+	font-weight: normal;
+	color: #6A5953;
+ }
+kbd {font-size: 0.9em;
+	display:inline-block;
+	line-height:17;}
+.wrap {
+  display: inline-block;
+  margin: 0 40px 2em 0;
+  background: rgba(228, 225, 228, .5);
+  border-radius:50%;
+  width: 200px;
+  height: 200px;
+}
+div {
+  margin: 0 auto;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.div_1{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	padding-left: 80px;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight {
+  border-radius:50%;
+  width: 200px;
+  height: 200px;
+}
+.one, .five{
+  background: rgba(255, 127, 80, .4);
+}
+.two, .six{
+  background: rgba(0, 228, 246, .4);
+}
+.three, .seven{
+  background: rgba(255, 153, 0, .4);
+}
+.four, .eight{
+	background:rgba(238, 130, 238, .4);
+}
+.one:hover {
+  -o-transform: scaleX(1.20);
+  -ms-transform: scaleX(1.20);
+  -moz-transform: scaleX(1.20);
+  -webkit-transform: scaleX(1.20);
+  transform: scaleX(1.2);
+}
+
+.two:hover {
+  -o-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+  -moz-transform:scaleY(1.2);
+  -webkit-transform: scaleY(1.2);  
+  transform: scaleY(1.2);
+}
+.three:hover {
+
+  -o-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -moz-transform:scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.four:hover {
+  -o-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+.five:hover {
+  -o-transform: scale(-1);
+  -ms-transform: scale(-1);
+  -moz-transform:scale(-1);
+  -webkit-transform: scale(-1);
+  transform: scale(-1);
+}
+.six:hover {
+  -o-transform: scale(1.2, 0.5);
+  -ms-transform: scale(1.2, 0.5);
+  -moz-transform: scale(1.2, 0.5);
+  -webkit-transform: scale(1.2, 0.5);
+  transform: scale(1.2, 0.5);
+}
+.seven:hover {
+  -o-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+.eight:hover {
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+<h1>Трансформація за допомогою функції SCALE</h1>
+<div class="div_1">
+<div class="wrap"><div class="one"><kbd>scaleX(1.2)</kbd></div></div>
+<div class="wrap"><div class="two"><kbd>scaleY(1.2)</kbd></div></div>
+<div class="wrap"><div class="three"><kbd>scaleX(-1)</kbd></div></div>
+<div class="wrap"><div class="four"><kbd>scaleY(-1)</kbd></div></div>
+<div class="wrap"><div class="five"><kbd>scale(-1)</kbd></div></div>
+<div class="wrap"><div class="six"><kbd>scale(1.2, 0.5)</kbd></div></div>
+<div class="wrap"><div class="seven"><kbd>scale(0.7)</kbd></div></div>
+<div class="wrap"><div class="eight"><kbd>scale(1.2)</kbd></div></div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksimenko</title>
+    <style>
+        .wrap {
+            margin: 30px;
+            background: rgba(228, 225, 228, .5);
+}
+div {
+  width: 170px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+.one, .four, .seven, .ten {
+  background: rgba(135, 86, 120, .4);
+}
+.one:hover {
+  transform: translateX(-40px);
+}
+.two, .five, .eight, .eleven {
+  background: rgba(0, 228, 246, .4);
+}
+.two:hover { 
+  transform: translateY(40px);
+}
+.three, .six, .nine {
+  background: rgba(255, 153, 0, .4);
+}
+.three:hover {
+  transform: translate(40px, -40px);
+}
+.four:hover {
+  transform: scaleX(-1);
+}
+.five:hover {
+  transform: scaleY(1.5);
+}
+.six:hover {
+  transform: scale(1.5, 0.8);
+}
+.seven:hover {
+  transform: rotate(360deg);
+}
+.eight:hover {
+  transform: skewX(20deg);
+}
+.nine:hover {
+  transform: skewY(-20deg);
+}
+.ten:hover {
+  transform: skew(-20deg, 20deg);
+}
+.eleven:hover {
+  transform: matrix(1.2,1,-1,2,0,1);
+}
+    </style>
+</head>
+<body>
+    <div class="osn">
+    <div class="wrap"><div class="one"><kbd>translateY(40px)</kbd></div></div>
+    <div class="wrap"><div class="two"><kbd>translateY(40px)</kbd></div></div>
+    <div class="wrap"><div class="three"><kbd>translate(40px, -40px)</kbd></div></div>
+    <div class="wrap"><div class="four"><kbd>scaleX(-1)</kbd></div></div>
+    <div class="wrap"><div class="five"><kbd>scaleY(1.5)</kbd></div></div>
+    <div class="wrap"><div class="six"><kbd>scale(1.5, 0.8)</kbd></div></div>
+    <div class="wrap"><div class="seven"><kbd>rotate(360deg)</kbd></div></div>
+    <div class="wrap"><div class="eight"><kbd>skewX(20deg)</kbd></div></div>
+    <div class="wrap"><div class="nine"><kbd>skewY(-20deg)</kbd></div></div>
+    <div class="wrap"><div class="ten"><kbd>skew(-20deg, 20deg)</kbd></div></div>
+    <div class="wrap"><div class="eleven"><kbd>matrix(1.2,1,-1,2,0,1)</kbd></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diachenko</title>
+	<style>
+		.box_1{
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			top: 150px;
+		}
+
+		.box_2{
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			top: 250px;
+		}
+
+		.box{
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			position: relative;
+			background-color: #5b92e5;
+			float: left;
+			transition: 0.5s;
+			text-align: center;
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+
+		.box1:hover{
+			transform: translateX(40px);
+		}
+
+		.box2:hover{
+			transform: translateX(-40px);
+		}
+
+		.box3:hover{
+			transform: translateY(40px);
+		}
+
+		.box4:hover{
+			transform: translateY(-40px);
+		}
+
+		.box5:hover{
+			transform: translate(-40px, 40px);
+		}
+
+		.box6:hover{
+			transform: translate(40px, 40px);
+		}
+
+		.box7:hover{
+			transform: translate(40px, -40px);
+		}
+
+		.box8:hover{
+			transform: translate(-40px, -40px);
+		}
+
+		h3{
+			position: relative;
+			top: 90px;
+		}
+
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Трансформації - translate()</h1>
+	<div class="box_1">
+		<div class="box box1"><h3>translateX(40px)</h3></div>
+		<div class="box box2"><h3>translateX(-40px)</h3></div>
+		<div class="box box3"><h3>translateY(40px)</h3></div>
+		<div class="box box4"><h3>translateY(40px)</h3></div>
+	</div>
+		
+	<div class="box_2">
+		<div class="box box5"><h3>translate(-40px, 40px)</h3></div>
+		<div class="box box6"><h3>translate(40px, 40px)</h3></div>
+		<div class="box box7"><h3>translate(40px, -40px)</h3></div>
+		<div class="box box8"><h3>translate(-40px, -40px)</h3></div>
+	</div>
+		
+</body>
+</html>
