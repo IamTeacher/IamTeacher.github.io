@@ -15,6 +15,9 @@ STYLE
 }
 
 00:00:00.000 --> 00:00:10.000
-- Hello <b>world</b>.
+- Привіт, <b>світ</b>!
 
 NOTE style blocks cannot appear after the first cue.
+
+00:00:11.000 --> 00:00:15.000
+- Мяу-мяу!
