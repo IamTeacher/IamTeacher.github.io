@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<style>
+	/* WebVTT cues */
+video::cue { 
+	color:red;
+	background:#0095dd;
+}
+
+</style>
+</head>
+<body>
+	<h1>Sound</h1>
+	<audio src="antitla-tdme.mp3" controls > </audio>
+	<h1>Video</h1>
+	<video controls width="400" height="400" preload="metadata">
+  	<source src="image.mp4" type="video/mp4">
+    <track kind="subtitles" src="titles.vtt" srclang="en">
+</video>
+</body>
+</html>
