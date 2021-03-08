@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калейдоскоп відкриттів</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		body{
+			overflow: hidden;
+		}
+		.startsquare{
+			cursor: pointer;
+			position: relative;
+			top: 45%;
+			left: 47%;
+			height: 100px;
+			width: 100px;
+			border: 0;
+			background-color: red;
+		}
+		.first{
+			animation: first 5s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: backwards;
+		}
+		.second{
+			animation: second 5s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: backwards;
+			top: -100px;
+		}
+		.sixth{
+			animation: sixth 5s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: backwards;
+			top: -500px;
+		}
+		.third{
+			animation: third 5s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: backwards;
+			top: -200px;
+		}
+		.fourth{
+			animation: fourth 5s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: backwards;
+			top: -300px;
+		}
+		.fifth{
+			animation: fifth 5s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: backwards;
+			top: -400px;
+		}
+		.seventh{
+			top:-600px;
+		}
+		@keyframes first{
+			50%{
+				transform: translate(100px, 100px);
+			}
+		}
+		@keyframes second{
+			50%{
+				transform: translate(-100px, 100px);
+			}
+		}
+		@keyframes third{
+			50%{
+				transform: translate(0px, 200px);
+			}
+		}
+		@keyframes fourth{
+			50%{
+				transform: translate(100px, -100px);
+			}
+		}
+		@keyframes fifth{
+			50%{
+				transform: translate(-100px, -100px);
+			}
+		}
+		@keyframes sixth{
+			50%{
+				transform: translate(0px, -200px);
+			}
+		}
+		.box{
+			display: inline;
+			position: absolute;
+			height: 100%;
+		}
+		.march{
+			position: relative;
+			top:-500px;
+		}
+		.socool{
+			position: relative;
+			top: 100px;
+		}
+	
+		.container{
+			position: relative;
+		}
+		video{
+			position: absolute;
+			left: 67%;
+			width: 30%;
+			height: 30%;
+			top: 67%;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		<h1 class="socool" style="font-size: 1000%;">C</h1>
+		<div class="container">
+			<div class="startsquare first"></div>
+			<div class="startsquare second"></div>
+			<div class="startsquare third"></div>
+			<div class="startsquare fourth"></div>
+			<div class="startsquare fifth"></div>
+			<div class="startsquare sixth"></div>
+			<div class="startsquare seventh"></div>
+		</div>
+		<h1 class="march" style="font-size: 1000%;">марта!</h1>
+		
+	</div>
+	<video preload="true" controls src="march.mp4">
+		<track kind="subtitles" src="titles.vtt" srclang="en">
+	</video>
+</body>
+</html>
